@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>cours 1</title>
+   
+<style>
+.menu{ 
+ width:100%;
+ background:#142b47;
+ overflow:auto; 
+}
+.menu ul{
+ margin:0;
+ padding:0;
+ list-style:none;
+ line-height:60px;
+} 
+ .menu li{
+ float:left;
+}
+.menu ul li a{
+ background:#142b47;
+ text-decoration:none;
+ width:130px;
+ display:block;
+ text-align:center;
+ color:#f2f2f2;
+ font-family:sans-serif;
+ letter-spacing:0.5px;
+}
+
+
+.menu li a:hover{
+ color:orange;
+ opacity: 0;
+ margin-left:100px;
+}
+.search-form{
+ margin-top:15px;
+ float:right;
+ margin-right:100px;
+}
+
+ input[type=text]{
+ padding:7px;
+ border:none;
+ font-size:16px;
+ font-family:sans-serif;
+}
+ button{
+ float:right;
+ background:orange;
+ color:white;
+ border-radius:0 5px 5px 0;
+ cursor:pointer;
+ position:relative;
+ padding:7px;
+ font-family:sans-serif;
+ border:none;
+ font-size:16px;
+}
+.box{
+ position:absolute;
+ top:50%;
+ left:50%;
+ transform:translate(-50%,-50%);
+ width:400px;
+ padding:40px;
+ background:rgba(0,0,0,.8);
+ box-sizing:border-box;
+ box-shadow:0 15px 25px rgba(0,0,0,.5);
+ border-radius:10px;
+}
+.box h2{
+ color:#fff;
+ margin:0 0 30px;
+ padding:0;
+ text-align:center;
+}
+.box.inputbox{
+ position:relative;
+}
+.box.inputbox input{
+ width:100%;
+ padding:100px 0;
+ font-size:16px;
+ color:#fff;
+ letter-spacing:1px;
+ margin-bottom:30px;
+ border:none;
+ border-bottom:1px solid orange;
+ outline:none;
+ background:transparent;
+}
+.box.input label{
+ position:absolute;
+ top:0;
+ left:0;
+ letter-spacing:1px;
+ padding:10px 0;
+ font-size:16px;
+ color:#fff;
+ pointer-events:none;
+ transition:1.4s;
+}
+.box.inputbox input:focus~label,
+.box.inputbox input:valid~label{
+ top:-18px;
+ left:0;
+ color:#03a9f4;
+ font-size:12px;
+}
+.box input[type="submit"]{
+ background:transparent;
+ border:none;  
+ outline:none;
+ color:#fff;
+ background:orange;
+ padding:10px 20px;
+ cursor:pointer;
+ border-radius:10px;
+}
+</style>
+</head>
+<body>
+ <nav class="menu">
+ <ul>
+ <li><a href="file:///C:/xampp/htdocs/omnia/home.html">Home</a></li>
+ <li><a href="file:///C:/xampp/htdocs/omnia/gallary.html">Gallery</a></li>
+ <li><a href="file:///C:/xampp/htdocs/omnia/services.html">Services</a></li>
+ <li><a href="file:///C:/xampp/htdocs/omnia/feedback.html">Feedback</a></li>
+ <li><a href="C:/xampp/htdocs/omnia/about%20us.html">About</a></li> 
+ <li><a href="file:///C:/xampp/htdocs/omnia/contact.html">Contact</a></li>
+ </ul>
+ <form class="search-form">
+ <input type="text" placeholer="search">
+ <button>search</button>
+ </form>
+ </nav>
+ <div class="box">
+ <h2>login</h2>
+ <form>
+ <div class="inputbox">
+ <input type="name" required="">
+ <label>Username</label>
+ </div>
+ <div class="inputbox">
+ <input type="password" required="">
+ <label>Password</label>
+ </div>
+ <input type="submit" name="" value="login"><br>
+ </form>
+ </div>
+ <script> 
+ alert("open page");
+</script>
+ </body>
+</html>
+
+
